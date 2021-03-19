@@ -1,7 +1,7 @@
 
 jenda
 =====
-A 
+A Google Calendar-esque console application.
 
 Building
 --------
