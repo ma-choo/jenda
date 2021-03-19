@@ -6,7 +6,9 @@ A Google Calendar-esque console application.
 Building
 --------
 This requires the PDCurses library to build on Windows. It should build with regular ncurses on Linux, too.
+
 https://pdcurses.org/
+
 Add PDCurses to your gcc library. Until I can figure out makefiles, just run this at the terminal:
 
 	gcc jenda.c calendarmath.c calendar.c event.c ui.c -lpdcurses
