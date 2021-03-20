@@ -19,13 +19,10 @@ Roadmap
 	* Maybe by adding/popping day_pos to/from stack?
 * Show events from the previous month and next month in the events window.
 	* Don't be so confined to zeller offsets and a global "working month."
-* Read, write, and create calendar and event files.
-	* Create calendar and event files at runtime.	
-	* Parse DDMMYYYY strings.
-	* Parse calendar-name and event-name strings.
-	* Create calendar vectors, and store event vectors in each calendar.
-		* Need a C vector implementation for this.
+* Read, write, and create calendar files.
+	* Create calendar and event structs at runtime.
+	* Create calendar vectors, and store a vector of events in each calendar.
+	* Read/write calendar files.
+		* Parse DDMMYYYY strings.
+		* Parse calendar-name and event-name strings.
 	* Implement .ical format compatibility.
-* Dynamically resize events window based on the "length" of the month.
-	* Use the sum of the zeller offset and the number of days in the month to determine if the events window will need 5 or 6 rows to display the the entire month.
-		* ```if(first_day_offset + days_in_month >= 35) ...```
